@@ -10,7 +10,8 @@ const Footer: React.FC<Props> = (props) => {
       <p> <p className="icons flex items-center justify-center text-4xl">
         <AiFillGithub />
         <AiOutlineLinkedin />
-      </p></p>
+      </p>
+      </p>
     </footer>
   );
 };
