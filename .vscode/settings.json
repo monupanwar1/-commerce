@@ -1,0 +1,95 @@
+{
+  "files.associations": {
+    "iostream": "cpp",
+    "ostream": "cpp"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Prettier as default formatter
+  "editor.formatOnSave": true, // Auto-format code on save
+  "editor.formatOnPaste": true, // Auto-format code on paste
+  "editor.formatOnType": false, // Disable auto-formatting on every keystroke for better control
+  "prettier.requireConfig": true, // Ensure Prettier uses a config file if present
+  "prettier.printWidth": 80, // Maximum line length
+  "prettier.tabWidth": 2, // Use 2 spaces for indentation
+  "prettier.useTabs": false, // Use spaces instead of tabs
+  "prettier.singleQuote": true, // Use single quotes
+  "prettier.trailingComma": "es5", // Add trailing commas where valid in ES5
+  "prettier.bracketSpacing": true, // Add spaces inside object brackets
+  "prettier.arrowParens": "always", // Always include parentheses for arrow functions
+  "prettier.endOfLine": "lf", // Line endings: Unix-style (LF)
+
+  "code-runner.preserveFocus": false,
+  "editor.peekWidgetDefaultFocus": "tree",
+  "editor.renderControlCharacters": true,
+  "editor.renderLineHighlight": "line",
+  "diffEditor.codeLens": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": "active",
+  "editor.colorDecorators": true,
+  "editor.language.colorizedBracketPairs": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"]
+  ],
+  "editor.matchBrackets": "always",
+  "editor.tabCompletion": "on",
+  "editor.wrappingIndent": "same",
+  "css.styleSheets": ["src/**/*.css"],
+  "editor.renderWhitespace": "all",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 14,
+  "editor.lineNumbers": "off",
+  "explorer.confirmDragAndDrop": false,
+  "editor.wordWrap": "on",
+  "explorer.confirmDelete": false,
+  "reactSnippets.settings.importReactOnTop": false,
+  "editor.cursorBlinking": "expand",
+  "editor.find.cursorMoveOnType": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "git.openRepositoryInParentFolders": "never",
+  "workbench.iconTheme": "material-icon-theme",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.accessibilitySupport": "off",
+  "terminal.integrated.env.windows": {},
+  "git.autofetch": true,
+  "workbench.statusBar.visible": false,
+  "window.menuBarVisibility": "compact",
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  "window.zoomLevel": 2,
+  "workbench.activityBar.location": "hidden",
+
+  // Prettier-specific file formats
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
