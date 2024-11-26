@@ -13,7 +13,10 @@ export interface IProduct {
 export interface IBanner {
   _id: string;
   image: any;
+  Image:any;
   buttonText: string;
+  height:number;
+  width:number;
   product: string;
   desc: string;
   smallText: string;

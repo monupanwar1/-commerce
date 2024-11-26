@@ -1,8 +1,12 @@
+import HeroBanner from "@/components/HeroBanner";
+
 const App =()=>{
   return (
    
-   <div className="bg-[#ffffff]">
-      <p>hello</p>
+   <div className="p-10">
+    <HeroBanner/>
+     
+     
     </div>
   
   )
