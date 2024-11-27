@@ -37,8 +37,8 @@ const HeroBanner = ({ heroBanner }: Props) => {
                     alt="Headphone"
                 />
 
-               
-               
+
+
             </div>
         </div>
     );

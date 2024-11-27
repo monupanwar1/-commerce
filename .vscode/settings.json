@@ -1,21 +1,17 @@
 {
-  "files.associations": {
-    "iostream": "cpp",
-    "ostream": "cpp"
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode", // Prettier as default formatter
-  "editor.formatOnSave": true, // Auto-format code on save
-  "editor.formatOnPaste": true, // Auto-format code on paste
-  "editor.formatOnType": false, // Disable auto-formatting on every keystroke for better control
-  "prettier.requireConfig": true, // Ensure Prettier uses a config file if present
-  "prettier.printWidth": 80, // Maximum line length
-  "prettier.tabWidth": 2, // Use 2 spaces for indentation
-  "prettier.useTabs": false, // Use spaces instead of tabs
-  "prettier.singleQuote": true, // Use single quotes
-  "prettier.trailingComma": "es5", // Add trailing commas where valid in ES5
-  "prettier.bracketSpacing": true, // Add spaces inside object brackets
-  "prettier.arrowParens": "always", // Always include parentheses for arrow functions
-  "prettier.endOfLine": "lf", // Line endings: Unix-style (LF)
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": false,
+  "prettier.requireConfig": true,
+  "prettier.printWidth": 80,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.bracketSpacing": true,
+  "prettier.arrowParens": "always",
+  "prettier.endOfLine": "lf",
 
   "code-runner.preserveFocus": false,
   "editor.peekWidgetDefaultFocus": "tree",
@@ -67,6 +63,53 @@
   "window.zoomLevel": 2,
   "workbench.activityBar.location": "hidden",
 
+  // Integrated terminal enhancements
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.scrollback": 10000,
+
+  // Error and linting settings
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+
+  // File explorer settings
+  "explorer.compactFolders": false,
+  "explorer.autoReveal": true,
+  "explorer.openEditors.visible": 10,
+
+  // Git settings
+  "git.confirmSync": false,
+  "git.autorefresh": true,
+  "git.enableSmartCommit": true,
+
+  // IntelliSense and autocomplete settings
+  "editor.suggestSelection": "first",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.parameterHints.enabled": true,
+  "editor.inlineSuggest.enabled": true,
+
+  // Debugging settings
+  "debug.inlineValues": true,
+  "debug.console.fontSize": 14,
+
+  // Performance optimization
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/dist": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true
+  },
+
   // Prettier-specific file formats
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -91,5 +134,9 @@
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+
+  // Auto-close and auto-rename tags for HTML and JSX
+  "auto-rename-tag.activationOnLanguage": ["html", "javascriptreact", "typescriptreact"],
+  "auto-close-tag.activationOnLanguage": ["html", "xml", "javascriptreact", "typescriptreact"]
 }
