@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Navabr = () => {
   return (
-    <div className="flex justify-between p-6 items-center relative">
+    <div className="flex justify-between p-6 items-center relative sticky bg-gray-200 transparent bg-2 top-0 right-0">
       <p className="Logo text-gray-500">
         <Link href="#">E-commerce</Link>
       </p>

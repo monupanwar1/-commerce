@@ -5,7 +5,7 @@ type Props = {
     heroBanner: IBanner;
 };
 
-const HeroBanner = ({ heroBanner }: Props) => {
+const Page = ({ heroBanner }: Props) => {
     return (
         <div className="hero-banner flex items-center justify-between bg-[#DCDCDC] rounded-lg shadow-lg p-24 h-96 w-full">
             {/* Left Section */}
@@ -27,7 +27,7 @@ const HeroBanner = ({ heroBanner }: Props) => {
             </div>
 
             {/* Right Section */}
-            <div className="relative flex items-center space-x-8">
+            <div className=" o  flex items-center space-x-8">
                 {/* Product Image */}
                 <Image
                     className="drop-shadow-lg transition-transform duration-200 hover:scale-105"
@@ -44,4 +44,4 @@ const HeroBanner = ({ heroBanner }: Props) => {
     );
 };
 
-export default HeroBanner;
+export default Page;

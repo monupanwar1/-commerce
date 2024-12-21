@@ -1,10 +1,18 @@
-import HeroBanner from "@/components/HeroBanner";
+
+
+import HeroSection from "@/app/pages/Homepage";
+import Cart from "@/app/pages/Cart";
+import Products from "./pages/Products";
 
 const App =()=>{
   return (
    
-   <div className="p-10">
-    <HeroBanner/>
+   <div className="h-screen w-full p-10">
+     <HeroSection/>
+     <Products/>
+     
+    
+    
      
      
     </div>
