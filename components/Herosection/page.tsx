@@ -14,8 +14,8 @@ const Page = ({ heroBanner }: Props) => {
                     Beats SOLO AIR
                 </p>
                 <h1 className="text-4xl font-bold text-black">Summer Sale</h1>
-                <h2 className="text-6xl font-extrabold text-[#5b21b6] animate-pulse">
-                    Fine
+                <h2 className="text-6xl font-extrabold text-indigo-900 animate-pulse">
+                    Boat
                 </h2>
                 <p className="text-gray-600 max-w-md">
                     Experience unmatched sound quality with the most comfortable headphones

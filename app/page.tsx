@@ -2,12 +2,12 @@
 
 import HeroSection from "@/app/pages/Homepage";
 import Cart from "@/app/pages/Cart";
-import Products from "./pages/Products";
+import Products from "./pages/Popular-products";
 
 const App =()=>{
   return (
    
-   <div className="h-screen w-full p-10">
+   <div className=" w-full h-[1700px] p-10">
      <HeroSection/>
      <Products/>
      
