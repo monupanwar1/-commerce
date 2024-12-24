@@ -5,7 +5,7 @@ const Navabr = () => {
   return (
     <div className="flex justify-between p-6 items-center relative transparent bg-2 top-0 right-0">
       <p className="Logo text-gray-500">
-        <Link href="/Carts/page">E-commerce</Link>
+        <Link href="/Cart">E-commerce</Link>
       </p>
       
       <Link href= "/app/pages/Cart.tsx"

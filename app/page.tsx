@@ -1,15 +1,18 @@
 
 
-import HeroSection from "@/app/pages/Homepage";
-import Cart from "@/app/pages/Cart";
-import Products from "./pages/Popular-products";
+import HeroSection from "@/components/Herosection";
+import Products from "@/components/Popular-products";
+import FooterBanner from "@/components/Footer-baner";
 
-const App =()=>{
+type heroProps ={}
+
+const App:React.FC<heroProps> =()=>{
   return (
    
    <div className=" w-full h-[1700px] p-10">
      <HeroSection/>
      <Products/>
+     <Footer-baner/>
      
     
     

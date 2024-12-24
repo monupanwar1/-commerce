@@ -1,5 +1,5 @@
-import Card from "@/components/Card/page";
-import FooterBanner from "@/components/FooterBanner/page";
+import Card from "@/components/card";
+
 
 interface Products {
   image:String;
@@ -27,7 +27,7 @@ const products = [
 ];
 
 
-export const Products:React.FC = () => {
+export const Products = () => {
   return (
     <div className="text-black h-screen w-full ">
          <h1 className="text-4xl font-bold mt-10 text-center text-black">Best selling Products</h1>
@@ -44,7 +44,7 @@ export const Products:React.FC = () => {
 
          ))}
          </div>
-         <FooterBanner/>
+        
 
     </div>
   )

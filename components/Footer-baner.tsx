@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-const page = () => {
+const FooterBanner = () => {
   return (
     <div className="">
     <div className="h-80 relative rounded-md bg-[#F02D20] w-full p-10 flex items-center justify-between">
@@ -31,4 +31,4 @@ const page = () => {
     </div>
   )
 }
-export default page
+export default FooterBanner
