@@ -1,7 +1,7 @@
-import {create} from 'zustand';
-import {createJSONStorage,persist} from "zustand/middleware"
 import { Product } from '@/Types';
-import {ProductCard} from '@/components/product-card';
+import toast from 'react-hot-toast';
+import { create } from 'zustand';
+import { persist } from "zustand/middleware";
 
 
 interface CartItems {
@@ -22,7 +22,9 @@ interface CartState{
 const UseCartStore =create<CartState>()(
     persist(
         (set,get)=>({
-            items:[],
+            items:[
+            
+            ],
 
 
             addToCart:(product)=>{
@@ -55,14 +57,14 @@ const UseCartStore =create<CartState>()(
         },
 
         updateQty:(type,id)=>{
-            const item =get().items.find((items)=>item.id ==id);
-            if(!item){
+            const items =get().items.find((items)=>items.id ==id);
+            if(!items){
                 return;
             }
-            if(item.quantity===1 && type ==="decrememt"){
+            if(items.quantity===1 && type ==="decrememt"){
                 get().removeFromCart(id);
             }else{
-                item.quantity=type==="decrememt" ? item.quantity-1:item.quantity+1;
+                items.quantity=type==="decrememt" ? items.quantity-1:items.quantity+1;
                 set({
                     items:[...get().items],
                 })

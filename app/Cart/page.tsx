@@ -1,7 +1,7 @@
-                          "use client";
-import Image from "next/image";
+'use client';
 
-import useCartStore from "@/Store/CartStore";
+import useCartStore from '@/Store/CartStore';
+import toast from 'react-hot-toast';
 
 interface CartItem {
   id: number;
@@ -16,7 +16,7 @@ export default function Cart() {
   const subtotal = items.reduce(
     (total, item) => total + item.price * item.quantity,
     0
-  );  
+  );
   const tax = subtotal * 0.1; // Assuming 10% tax
   const total = subtotal + tax;
 
@@ -46,25 +46,26 @@ export default function Cart() {
                   </h2>
                   <p className="text-gray-600">${item.price.toFixed(2)}</p>
                   <div className="flex items-center mt-2">
-                    <button className="bg-blue-500 px-4 py-2 rounded-md"
-                      onClick={() => updateQty("decrememt", item.id)}
-                     
-                     
+                    <button
+                      className="bg-blue-500 px-4 py-2 rounded-md"
+                      onClick={() => updateQty('decrememt', item.id)}
                     >
                       -
                     </button>
-                    <span className="mx-2 bg-blue-500 px-4 py-2 rounded-md">{item.quantity}</span>
+                    <span className="mx-2 bg-blue-500 px-4 py-2 rounded-md">
+                      {item.quantity}
+                    </span>
                     <button
-                      onClick={() => updateQty("increment", item.id)}
-                      
+                      className="bg-blue-500 px-4 py-2 rounded-md"
+                      onClick={() => updateQty('increment', item.id)}
                     >
                       +
                     </button>
                   </div>
                 </div>
-                <button className="bg-blue-500 px-4 py-2 rounded-md"
+                <button
+                  className="bg-blue-500 px-4 py-2 rounded-md"
                   onClick={() => removeFromCart(item.id)}
-                  
                 >
                   Remove
                 </button>
@@ -88,7 +89,12 @@ export default function Cart() {
                 <span>Total</span>
                 <span>${total.toFixed(2)}</span>
               </div>
-              <button className="w-full mt-6 bg-blue-500 px-4 py-2">Proceed to Checkout</button>
+              <button
+                onClick={() => toast.success('checkout succesfully')}
+                className="w-full mt-6 bg-blue-500 px-4 py-2"
+              >
+                Proceed to Checkout
+              </button>
             </div>
           </div>
         </div>
@@ -96,4 +102,3 @@ export default function Cart() {
     </div>
   );
 }
-

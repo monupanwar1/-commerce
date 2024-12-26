@@ -1,11 +1,11 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.formatOnPaste": true,
   "editor.formatOnType": false,
   "prettier.requireConfig": true,
   "prettier.printWidth": 80,
-  "prettier.tabWidth": 2,
+ 
   "prettier.useTabs": false,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
@@ -33,7 +33,7 @@
   "editor.wrappingIndent": "same",
   "css.styleSheets": ["src/**/*.css"],
   "editor.renderWhitespace": "all",
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "operator mono lig",
   "editor.fontLigatures": true,
   "breadcrumbs.enabled": false,
   "editor.minimap.enabled": false,
@@ -111,30 +111,7 @@
   },
 
   // Prettier-specific file formats
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  
 
   // Auto-close and auto-rename tags for HTML and JSX
   "auto-rename-tag.activationOnLanguage": ["html", "javascriptreact", "typescriptreact"],

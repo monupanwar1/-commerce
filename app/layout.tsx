@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/site-header";
+import { Toaster } from "react-hot-toast";
 
 
 
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#ffffff]`}>
+         <Toaster position="top-center" reverseOrder={false} />
         <Header/>
         {children}
         
