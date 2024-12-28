@@ -89,9 +89,9 @@ export default function profilePage(){
                     </p>
 
                 </div>
-
-                <button className="px-4 py-2 rounded-">Logout</button>
-                
+                 <div className="flex items-cenetr justify-center">
+                <button onClick={handleLogout} className="px-4 py-2 bg-blue-500 rounded-md mt-4  rounded-">Logout</button>
+                </div>
             
 
            </div>
