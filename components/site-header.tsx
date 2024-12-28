@@ -1,5 +1,6 @@
 "use client"
 
+import { useAuthStore } from "@/Store/AuthStore"
 import UseCartStore from "@/Store/CartStore"
 import Link from "next/link"
 
@@ -10,7 +11,7 @@ const user ={
 }
 
 const header = () => {
-  const isLoggedIn =false
+  const user =useAuthStore((state)=>state.user)
   const items = UseCartStore((state)=>state.items)
   return (
     <div className=" p-4  glass rounded-md items-center flex justify-between">
@@ -25,7 +26,7 @@ const header = () => {
             
              </Link>
             <Link href="/Counter" className="font-3xl text-black">Counter</Link>
-            {isLoggedIn?(
+            {user?(
               <Link href="/Profile" className="font-3xl text-black">Profile</Link>
 
             ):(<Link href="/login" className="font-3xl text-black">Login</Link>)}
