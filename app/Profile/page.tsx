@@ -90,7 +90,7 @@ export default function profilePage(){
 
                 </div>
                  <div className="flex items-cenetr justify-center">
-                <button onClick={handleLogout} className="px-4 py-2 bg-blue-500 rounded-md mt-4  rounded-">Logout</button>
+                <button onClick={handleLogout} className="px-4 py-2 bg-blue-500  rounded-">Logout</button>
                 </div>
             
 
